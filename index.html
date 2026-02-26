@@ -9,16 +9,16 @@
 <body>
     <!-- nav bar  -->
     <header>
-        <nav>
+        <nav id ="home">
             <img src="assets/145Png.png" alt="logo" class="logo">
             <h2>Coffee Bondin</h2>
             
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
 
             </ul>
         </nav>
@@ -26,7 +26,7 @@
 
     <!-- section  -->
      <main class="m1">
-        <section class="s1">
+        <section class="s1" >
         <h1>Start Your Day With Fresh Coffee</h1>
         <p>Cofee is a popular and beloved beverage enjoyed by millions around the world.
             Awaken your senses with a stream of rich, aromatic coffee that invigorates your mornings and fuels your day.
@@ -35,7 +35,7 @@
         </section>
      </main>
      <main class="m2">
-        <section class="s2">
+        <section class="s2" id="about">
             <h1>About <span>Us</span></h1>
             <div class="div_about">
             <div class="div_img">
@@ -56,17 +56,143 @@
                 </tr>
             </table>
             </div>
-
-            
-
             </div>
-
-            
-            
         </section>
      </main>
 
+     <!-- menu  -->
+    <main class="m3">
+    <section class="menu" id="menu">
+        <h3>Our Coffee Menu</h3>
+        
+        <table class="menu-table">
+            <tr>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/Cafe-Espresso.png" alt="espresso" class="img_menu">
+                        <h4>Espresso</h4>
+                        <p>Rich and bold, crafted from premium beans.</p>
+                        <span class="price">1.500 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/americano.png" alt="americano" class="img_menu">
+                        <h4>Americano</h4>
+                        <p>Espresso with hot water for a smooth experience.</p>
+                        <span class="price">2.200 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/cappu.png" alt="cappuccino" class="img_menu">
+                        <h4>Cappuccino</h4>
+                        <p>Espresso, steamed milk, and frothy foam.</p>
+                        <span class="price">2.500 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/latte.webp" alt="latte" class="img_menu">
+                        <h4>Latte</h4>
+                        <p>Creamy espresso with plenty of steamed milk.</p>
+                        <span class="price">3.200 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/mocha.png" alt="mocha" class="img_menu">
+                        <h4>Mocha</h4>
+                        <p>A chocolate-flavored variant of a caffè latte.</p>
+                        <span class="price">3.800 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="coffee">
+                        <img src="assets/iced.png" alt="iced coffee" class="img_menu">
+                        <h4>Iced Coffee</h4>
+                        <p>Cold brew coffee served over ice.</p>
+                        <span class="price">2.500 DT</span>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+
+<!-- gallery  -->
+<main class="m4">
+    <section class="gallery" id="gallery">
+        <h3>Gallery</h3>
+        <table class="gallery-table">
+            <tr>
+                <td><img src="assets/g1.jpg" alt="image 1"></td>
+                <td><img src="assets/g2.jpg" alt="image 2"></td>
+                <td><img src="assets/g3.jpg" alt="image 3"></td>
+            </tr>
+            <tr>
+                <td><img src="assets/g4.jpg" alt="image 4"></td>
+                <td><img src="assets/g5.jpg" alt="image 5"></td>
+                <td><img src="assets/g6.jpg" alt="image 6"></td>
+            </tr>
+
+            <tr>
+                <td><img src="assets/g7.jpg" alt="image 7"></td>
+                <td><img src="assets/g8.jpg" alt="image 8"></td>
+                <td><img src="assets/g9.jpg" alt="image 9"></td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+
+<!-- contact  -->
+
+<main class="m5">
+    <section class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <p class="ppp">Have questions or want to place an order? Reach out to us!</p>
+        
+        <div class="div_contact">
+            <div class="contact-info">
+                <h4>Find Us</h4>
+                <p>11, Entrepreneurs Street,<br>
+                Z.I. Airport Charguia II,<br>
+                2035 Tunis Carthage - Tunisia</p>
+                
+                <p><strong>Phone:</strong> +216 70 011 111</p>
+                <p><strong>Email:</strong> contact@bondin.com</p>
+            </div>
+
+            <form action="#" method="post" class="form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <div class="button-group">
+                    <button type="submit" class="btn">Send Message</button>
+                    <button type="reset" class="btn reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
    
+
+
+<!-- footer  -->
+<footer>
+    <p>&copy; 2024 Coffee Bondin. All rights reserved.</p>
+</footer>
     
 </body>
 </html>

@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
-/********* style global *********/
+
+/* fix the scroll */
+html {
+    scroll-behavior: smooth;
+}   
+
+/**style global **/
 
 *{
-    font-size: "poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -166,4 +171,246 @@ td{
 }
 td a img:hover{
     transform: scale(1.4    );
+}
+
+/* style menu */
+
+.menu{
+    background-color: #13131a;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+}
+.m3 .menu img{
+    width: 200px;
+    margin: 0 20px;
+    transition: 0.3s ease;
+}
+
+.menu h3 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: 'Miniver', cursive;
+    color: #C06B3E;
+}
+
+.menu-table {
+    margin: 0 auto;
+    border-spacing: 25px; 
+    table-layout: fixed;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.coffee {
+    background-color: black; 
+    border: 1px solid #333;
+    padding: 30px 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    height: 70%;
+    width: 80%;
+}
+
+.coffee:hover {
+    border-color: #C06B3E;
+    transform: translateY(-8px);
+}
+
+
+.img_menu {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.price {
+    display: block;
+    font-size: 22px;
+    color: #C06B3E;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #C06B3E;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* style galery */
+
+.gallery {
+    background-color: black;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.gallery h3 {
+    font-size: 60px; 
+    margin-bottom: 50px;
+    font-family: 'Miniver', cursive;
+    color: #C06B3E;
+}
+
+.gallery-table {
+    margin-left: 220px;  
+    margin-right: auto; 
+    border-spacing: 20px;
+    width: 80%;
+}
+
+.gallery-table img {
+    width: 100%;       
+    height: 350px;     
+    object-fit: cover; 
+    border-radius: 20px;
+    border: 1px solid #333;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.gallery-table img:hover {
+    transform: scale(1.03);
+    border-color: #C06B3E;
+}
+
+/* style contact */
+
+.contact {
+    background-color: #13131A;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact h3 {
+    font-size: 45px;
+    font-family: 'Miniver', cursive;
+    color: #C06B3E;
+    margin-bottom: 10px;
+}
+
+.ppp {
+    margin-bottom: 40px;
+    color: #bbb;
+}
+
+.div_contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+
+.contact-info {
+    flex: 1;
+    background-color: #13131A;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #C06B3E;
+}
+
+.contact-info h4 {
+    color: #C06B3E;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, 
+.form textarea,
+.form .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #13131A;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.form input:focus, 
+.form textarea:focus {
+    border-color: #C06B3E;
+}
+
+
+
+.button-group {
+    display: flex;
+    gap: 15px; 
+    width: 100%;
+}
+
+
+.button-group .btn {
+    flex: 1; 
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.button-group [type="submit"] {
+    background-color: #C06B3E;
+    color: white;
+}
+
+
+.reset-btn {
+    background-color: #444;
+    color: white;
+}
+
+.button-group [type="submit"]:hover {
+    background-color: #d17a4a;
+}
+
+.reset-btn:hover {
+    background-color: #444;
+    color: #ff4d4d; 
+}
+
+/* style footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
 }
