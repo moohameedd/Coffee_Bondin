@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/145Png.png">
     <title>Coffee Bondin</title>
 </head>
 <body>
@@ -177,6 +178,16 @@
             <form action="#" method="post" class="form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
+                <input list="coffee-options" name="favorite_coffee" placeholder="Which coffee do you like the most?" class="coffee-input">
+
+                <datalist id="coffee-options">
+                    <option value="Espresso">
+                    <option value="Americano">
+                    <option value="Cappuccino">
+                    <option value="Latte">
+                    <option value="Mocha">
+                    <option value="Iced Coffee">
+                </datalist>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <div class="button-group">
                     <button type="submit" class="btn">Send Message</button>

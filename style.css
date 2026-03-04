@@ -20,7 +20,6 @@ body{
     height: 100vh;
 }
 header{
-    
     background-color: black;
     height: 16vh;
 }
@@ -325,6 +324,7 @@ td a img:hover{
     padding: 30px;
     border-radius: 15px;
     border-left: 5px solid #C06B3E;
+    margin-top: 44px;
 }
 
 .contact-info h4 {
@@ -405,6 +405,28 @@ td a img:hover{
     color: #ff4d4d; 
 }
 
+/* Style for the datalist */
+.coffee-input {
+    width: 100%;
+    padding: 15px;
+    background-color: #13131A;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.coffee-input:focus {
+    border-color: #C06B3E; 
+}
+
+
+datalist {
+    background-color: #13131A;
+    color: white;
+}
+
 /* style footer */
 
 footer {
@@ -413,4 +435,83 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+
+/* --- Rsponsive design --- */
+
+@media (max-width: 1024px) {
+    .div_about, .div_contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_about {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .p_about {
+        margin-right: 0;
+    }
+
+    .gallery-table {
+        margin-left: auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h2 {
+        margin-right: 0; 
+    }
+
+    ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul li a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .s1 h1 {
+        font-size: 32px;
+    }
+
+    .s1 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    
+    .menu-table tr, .gallery-table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .coffee {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column; 
+    }
 }
