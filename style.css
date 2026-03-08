@@ -21,13 +21,17 @@ body{
 }
 header{
     background-color: black;
-    height: 16vh;
+    height: 12vh;
+    position: fixed;
+    width: 100%;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin: 0;
+    margin-top: -25px;
     
 }
 ul{
@@ -497,13 +501,16 @@ footer {
         margin-right: 0;
         text-align: center;
     }
-
+    .m3{
+        margin-top: 40px;
+    }
     
     .menu-table tr, .gallery-table tr {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
+        margin-left: auto;
+        margin-top: 20px;
     }
 
     .coffee {
