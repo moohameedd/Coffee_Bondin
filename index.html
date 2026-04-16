@@ -175,11 +175,19 @@
                 <p><strong>Email:</strong> contact@bondin.com</p>
             </div>
 
-            <form action="#" method="post" class="form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input list="coffee-options" name="favorite_coffee" placeholder="Which coffee do you like the most?" class="coffee-input">
-
+            <form action="#" method="post" class="form" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" id="name" oninput="verif_name()" required>
+                    <span id="name-error" class="input-error"></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Your Email" id="email" oninput="verif_email()" required>
+                    <span id="email-error" class="input-error"></span>
+                </div>
+                <div class="input-group">
+                    <input list="coffee-options" name="favorite_coffee" placeholder="Which coffee do you like the most?" class="coffee-input" id="favorite_coffee" oninput="verif_favorite()">
+                    <span id="favorite-error" class="input-error"></span>
+                </div>
                 <datalist id="coffee-options">
                     <option value="Espresso">
                     <option value="Americano">
@@ -188,13 +196,16 @@
                     <option value="Mocha">
                     <option value="Iced Coffee">
                 </datalist>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <div class="input-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" id="message" oninput="verif_message()" required></textarea>
+                    <span id="message-error" class="input-error"></span>
+                </div>
                 <div class="button-group">
                     <button type="submit" class="btn">Send Message</button>
                     <button type="reset" class="btn reset-btn">Reset</button>
                 </div>
             </form>
-        </div>
+        </div>  
     </section>
 </main>
    
@@ -204,6 +215,6 @@
 <footer>
     <p>&copy; 2024 Coffee Bondin. All rights reserved.</p>
 </footer>
-    
+    <script src="contole_contact.js"></script>
 </body>
 </html>

@@ -370,6 +370,27 @@ td a img:hover{
 
 
 
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-error {
+    font-size: 14px;
+    color: #ff6b6b;
+    min-height: 18px;
+}
+
+.form input.invalid {
+    border-color: red;
+}
+
+.form input.valid {
+    border-color: green;
+}
+
 .button-group {
     display: flex;
     gap: 15px; 
